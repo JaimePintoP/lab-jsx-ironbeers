@@ -24,7 +24,7 @@ app.get('/beers', (req, res) => {
     .getBeers()
     .then(beersFromApi => {
       console.log('All the Beers from the API: ', beersFromApi);
-
+      
       // Prepare the object to be passed/injected to `Beers` view
       const data = { beersFromApi: beersFromApi };
 
